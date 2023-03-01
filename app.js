@@ -8,7 +8,7 @@ app.get("/app", (req, res) => {
   res.send("App is working");
 });
 
-app.get("/payment", (req, res) => {
+app.get("/app/payment", (req, res) => {
   res.send("Payment is working");
 });
 
