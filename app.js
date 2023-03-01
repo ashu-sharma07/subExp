@@ -4,12 +4,12 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
 app.get("/app", (req, res) => {
   res.send("App is working");
+});
+
+app.get("/payment", (req, res) => {
+  res.send("Payment is working");
 });
 
 app.use((req, res, next) => {
